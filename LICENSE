@@ -1,0 +1,42 @@
+Portions Copyright 2014 Reid Burke <me@reidburke.com>
+
+Original design by Spark Labs, Inc.
+
+This distribution is not affiliated with Spark Labs, Inc.
+
+The following license applies to all parts of the Software
+except as noted below.
+
+These files are made available under the Creative Commons
+Attribution-ShareAlike 3.0 license. For full license text,
+see http://creativecommons.org/licenses/by-sa/3.0/us/.
+
+This project includes jQuery.
+http://jquery.org/
+Copyright 2005, 2014 jQuery Foundation and other contributors. 
+Used under the MIT license.
+
+This project includes fillsize.
+https://github.com/rstacruz/jquery-stuff/tree/master/fillsize 
+Copyright 2012 Rico Sta. Cruz.
+Used under the MIT License.
+
+This project includes scrollspy, a part of Bootstrap.
+https://github.com/twbs/bootstrap
+Copyright 2011-2014 Twitter, Inc.
+Used under the MIT License.
+
+These files contains LESS stylesheets, Gruntfile, and design elements
+from the Spark Docs project, located at https://github.com/spark/docs.
+Copyright 2013 Spark Labs, Inc.
+
+The license for Spark Docs follows:
+
+These files have been made available online through a Creative Commons
+Attribution-ShareAlike 3.0 license.
+
+You are welcome to distribute, remix, and use these files for commercial
+purposes. If you do so, please attribute the original design to
+Spark Labs, Inc. both on the website and on the physical packaging of the
+product or in the instruction manual. All derivative works must be published
+under the same or a similar license.

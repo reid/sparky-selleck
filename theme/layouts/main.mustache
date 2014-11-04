@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width">
+
+  <title>{{htmlTitle}}</title>
+
+  <script src="{{projectAssets}}/js/jquery-1.11.1.min.js"></script>
+
+  <link rel="shortcut icon" href="{{projectAssets}}/{{iconName}}.ico" type="image/x-icon" />
+
+  <script src='{{projectAssets}}/js/jquery-styling.js'></script>
+  <script src='{{projectAssets}}/js/scrollspy.js'></script>
+  <script src='{{projectAssets}}/js/prettify.js'></script>
+
+  <link href='{{projectAssets}}/css/style.css' rel='stylesheet'>
+
+</head>
+<body role='flatdoc' class='no-literate'>
+
+  <div id="docs">
+    <div class='header'>
+        <div class='left'>
+            <a href="{{home_url}}">
+                {{projectTitle}}
+            </a>
+        </a>
+      </div>
+      <div class='right'>
+          <a href="{{githubURL}}" class="icon"><i class="icon ion-social-github"></i></a>
+      </div>
+    </div>
+
+    <div class='content-root' data-spy="scroll" data-target="#toc">
+      <div class='menubar'>
+        <div class='menu section' role='flatdoc-menu'>
+            {{sidebar}}
+        </div>
+        <div id='toc' class='menu section' role='flatdoc-menu'>
+            {{toc}}
+        </div>
+      </div>
+      <div role='flatdoc-content' class='content'>
+        <h1 class='{{#if beta}} beta{{/if}}'>{{title}}</h1>
+        {{> layout_content}}
+        
+        <div class='footer'>
+            This documentation is themed by <a href='{{themeHomepage}}'>{{themeName}}</a>,
+            provided under the
+            <a href="http://creativecommons.org/licenses/by-sa/3.0/us/">CC-BY 3.0</a> license.
+            Based on original design by Spark Labs, Inc. and
+            <a href="https://github.com/spark/docs#license">used under license</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom -->
+  <script src='{{projectAssets}}/js/docs.js'></script>
+</body>
+</html>
