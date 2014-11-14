@@ -643,6 +643,9 @@ code .comment {
   padding: 5px;
   line-height: 1.428571429;
   vertical-align: top;
+  font-family: Menlo, monospace;
+  font-size: 11px;
+  color: #ffffff;
 }
 .content table th {
   vertical-align: bottom;
@@ -2960,7 +2963,7 @@ a.icon:hover {
 .header .left a {
   display: block;
   font-weight: 300;
-  padding: 11px 24px;
+  padding: 11px 30px;
   font: 24px "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   color: #444;
 }
@@ -3231,8 +3234,9 @@ a.icon:hover {
 .menu a:hover {
   color: #228a8a;
 }
-.menu .heading,
-.menu .heading:visited {
+.menu .book-toc div.heading,
+.menu a.level-0,
+.menu a.level-0:visited {
   font-family: montserrat, sans-serif;
   text-transform: uppercase;
   font-size: 12px;
@@ -3241,35 +3245,45 @@ a.icon:hover {
   padding-top: 5px;
   padding-bottom: 4px;
 }
-.menu .heading:hover {
+.menu a.level-0:hover {
   color: #333333;
 }
-.menu .heading.active {
+.menu a.level-0.active {
   background: #eeeeee;
   margin-left: -30px;
   padding-left: 30px;
 }
-.book-toc .menu a {
+.menu > ul.toc > li > a,
+.menu a.level-1 {
   font-family: montserrat, sans-serif;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
 }
-.book-toc a,
-.book-toc a:visited {
+.menu li:first-child a.level-1 {
+  color: #333333;
+}
+.menu > ul.toc > li > a,
+.menu a.level-1,
+.menu a.level-1:visited {
   color: #9090aa;
 }
-.book-toc a:hover {
+.menu a.level-1:hover {
   color: #565666;
 }
 .menu a.level-2 {
   font-weight: normal;
   font-size: 12px;
 }
+.menu .book-toc li > a,
+.menu > ul.toc > li > ul.toc li > a,
 .menu a.level-3 {
   font-weight: normal;
   font-size: 12px;
   padding-left: 10px;
+}
+.menu > ul.toc > li > ul.toc li > ul {
+  display: none;
 }
 .menu a.active {
   font-weight: bold !important;
