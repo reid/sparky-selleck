@@ -1,6 +1,6 @@
 {
   "name": "sparky-selleck",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Selleck theme adapted from Spark Docs",
   "main": "index.js",
   "bin": "bin.js",
