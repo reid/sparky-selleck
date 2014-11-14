@@ -19,6 +19,10 @@ var generator = require('./index'),
             assets: {
                 metavar: 'DIR',
                 help: 'Path to additional assets to include in this theme'
+            },
+            partials: {
+                metavar: 'DIR',
+                help: 'Path to additional partials to include in this theme'
             }
         }).parse();
 
