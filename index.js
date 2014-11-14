@@ -24,7 +24,7 @@ module.exports = function (opts, cb) {
     themeConfig.themeName = pkg.name;
     themeConfig.themeHomepage = pkg.homepage;
 
-    function onThemeReady(err) {
+    function onModulesReady(err) {
         if (err) { return cb(err); }
 
         if (opts.assets) {
@@ -34,6 +34,12 @@ module.exports = function (opts, cb) {
         if (opts.partials) {
             cpr(opts.partials, path.join(destination, 'partials'), cb);
         }
+    }
+
+    function onThemeReady(err) {
+        if (err) { return cb(err); }
+
+        cpr(path.join(__dirname, 'node_modules'), destination, onModulesReady);
     }
 
     function onThemeConfigured(err) {
