@@ -29,6 +29,7 @@
         </a>
       </div>
       <div class='right'>
+          {{> header}}
           <a href="{{githubURL}}" class="icon"><i class="icon ion-social-github"></i></a>
       </div>
     </div>
@@ -45,7 +46,7 @@
       <div role='flatdoc-content' class='content'>
         <h1 class='{{#if beta}} beta{{/if}}'>{{title}}</h1>
         {{> layout_content}}
-        
+
         <div class='footer'>
             This documentation is themed by <a href='{{themeHomepage}}'>{{themeName}}</a>,
             provided under the

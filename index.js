@@ -30,6 +30,10 @@ module.exports = function (opts, cb) {
         if (opts.assets) {
             cpr(opts.assets, path.join(destination, 'assets'), cb);
         }
+
+        if (opts.partials) {
+            cpr(opts.partials, path.join(destination, 'partials'), cb);
+        }
     }
 
     function onThemeConfigured(err) {
