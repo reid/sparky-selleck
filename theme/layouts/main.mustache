@@ -17,6 +17,8 @@
 
   <link href='{{projectAssets}}/css/style.css' rel='stylesheet'>
 
+  {{> head}}
+
 </head>
 <body role='flatdoc' class='no-literate'>
 
@@ -48,15 +50,21 @@
         {{> layout_content}}
 
         <div class='footer'>
-            <a href='{{themeHomepage}}'>{{themeName}}</a> theme
-            adapted from original design
-            by Spark Labs, Inc. and
-            <a href="https://github.com/spark/docs#license">used under license</a>.
+            <p>
+                {{> footer}}
+            </p>
+            <p>
+                <a href='{{themeHomepage}}'>{{themeName}}</a> theme
+                adapted from original design
+                by Spark Labs, Inc. and
+                <a href="https://github.com/spark/docs#license">used under license</a>.
+            </p>
         </div>
       </div>
     </div>
   </div>
 
+  {{> foot}}
   <!-- Custom -->
   <script src='{{projectAssets}}/js/docs.js'></script>
 </body>
